@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,500;1,400;1,700&display=swap');
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    color: rgb(255, 255, 255);
+}
+
+/*Desktop*/
+
+    .Rating__state{
+        width: 100%;
+        max-width: 400px;
+        background-image: linear-gradient(hsl(213, 19%, 18%), hsl(212, 22%, 12%));
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    .img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 12px;
+        width: 40px;
+        background-color: hsl(212, 13%, 23%);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 400px;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 15px;
+        color: hsl(217, 12%, 63%);
+        margin-bottom: 40px;
+    }
+    form{
+        display: flex;
+        justify-content: space-around;
+    }
+    .btn{
+        text-align: center;
+        border-radius: 50%;
+        width: 50px;
+        padding: 12px 12px;
+        background-color: hsl(212, 13%, 23%);
+        margin-bottom: 30px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: hsl(217, 12%, 63%);
+    }
+    .btn:focus{
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+    }
+
+    button{
+        background-color: hsl(25, 97%, 53%);
+        border: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        color: white;
+        
+    }
+    button:hover{
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+    }
+
+    .Thank__you--state{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        background-image: linear-gradient(hsl(213, 19%, 18%), hsl(212, 22%, 12%));
+        padding: 20px;
+        border-radius: 14px;
+        position: absolute;
+        z-index: 100;
+        transition: all 300ms ease;
+        padding: 50px 50px;
+        visibility:hidden;
+        opacity:0;
+ 
+        
+    }
+    .selection p{
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(213, 17%, 27%);
+        padding: 5px 10px;
+        margin: 20px 60px;
+        border-radius: 30px;
+      }
+    .submited .Rating__state{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 400ms;
+    }
+    .submited .Thank__you--state{
+        z-index: 60;
+        visibility: visible;
+        opacity: 1;
+    }
+    #final__btn{
+        color: hsl(25, 97%, 53%);
+        background-color: hsl(212, 13%, 23%);
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .thank__you--para{
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    .attribution{
+        margin-top: 30px;
+    }
+    .final-btn{
+        color: hsl(25, 97%, 53%);
+        margin-top: 30px;
+        
+    }
+
+@media (max-width:400px) {
+    main{
+       width: 400px;
+    }
+    .Rating__state{
+        width: 300px;
+        height: 400px;
+    }
+    .Thank__you--state{
+        width: 300px;
+    }
+    .selection p{
+        width: 180px;
+    }
+    .btn{
+        width: 40px;
+        height: 40px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
